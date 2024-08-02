@@ -1,0 +1,154 @@
+@import "brand-colors/dist/latest/scss/brand-colors.latest";
+
+$bs-height-base: (($font-size-base * $btn-line-height) + ($btn-padding-y * 2)) !default;
+$bs-height-lg: (($font-size-lg * $btn-line-height-lg) + ($btn-padding-y-lg * 2)) !default;
+$bs-height-sm: (($font-size-sm * $btn-line-height-sm) + ($btn-padding-y-sm * 2)) !default;
+//
+.btn-social {
+  display: inline-flex;
+  justify-content: flex-start;
+  align-items: center;
+  @include text-truncate();
+  > :first-child {
+    flex: 0 0 1em;
+    padding: 0;
+    margin-right: $btn-padding-x;
+  }
+  > :last-child {
+    @include text-truncate();
+  }
+  &.btn-block {
+    display: flex;
+  }
+  &.btn-lg {
+    > :first-child {
+      margin-right: $btn-padding-x-lg;
+    }
+  }
+  &.btn-sm {
+    > :first-child {
+      margin-right: $btn-padding-x-sm;
+    }
+  }
+}
+
+.btn-social-icon {
+  @extend .btn-social;
+  width: $bs-height-base;
+  height: $bs-height-base;
+  padding: 0;
+  justify-content: center;
+  align-items: center;
+  box-sizing: content-box;
+  > :first-child {
+    margin: 0;
+    padding: 0;
+    padding-right: 0;
+    margin-right: 0;
+    font-size: 24px;
+  }
+  &.btn-lg {
+    width: $bs-height-lg;
+    height: $bs-height-lg;
+    > :first-child {
+      margin-right: 0;
+    }
+    margin-right: 0;
+  }
+  &.btn-sm {
+    width: $bs-height-sm;
+    height: $bs-height-sm;
+    > :first-child {
+      margin-right: 0;
+    }
+  }
+}
+
+@mixin btn-social($color-bg, $color: #ffffff) {
+  @include button-variant($color-bg, $color-bg);
+  color: $color;
+}
+
+.btn-bitbucket {
+  @include btn-social($bc-bitbucket);
+}
+
+.btn-dropbox {
+  @include btn-social($bc-dropbox);
+}
+
+.btn-facebook {
+  @include btn-social($bc-facebook);
+}
+
+.btn-flickr {
+  @include btn-social($bc-flickr);
+}
+
+.btn-foursquare {
+  @include btn-social($bc-foursquare);
+}
+
+.btn-github {
+  @include btn-social($bc-github-8);
+}
+
+.btn-google {
+  @include btn-social($bc-google-4);
+}
+
+.btn-instagram {
+  @include btn-social($bc-instagram-3);
+}
+
+.btn-linkedin {
+  @include btn-social($bc-linkedin);
+}
+
+.btn-microsoft {
+  @include btn-social($bc-microsoft);
+}
+
+.btn-odnoklassniki {
+  @include btn-social($bc-odnoklassniki);
+}
+
+.btn-openid {
+  @include btn-social(#f7931e);
+}
+
+.btn-pinterest {
+  @include btn-social($bc-pinterest);
+}
+
+.btn-reddit {
+  @include btn-social($bc-reddit-3, #000);
+}
+
+.btn-soundcloud {
+  @include btn-social($bc-soundcloud);
+}
+
+.btn-tumblr {
+  @include btn-social($bc-tumblr);
+}
+
+.btn-twitter {
+  @include btn-social($bc-twitter);
+}
+
+.btn-vimeo {
+  @include btn-social($bc-vimeo);
+}
+
+.btn-vk {
+  @include btn-social($bc-vkontakte);
+}
+
+.btn-yahoo {
+  @include btn-social($bc-yahoo);
+}
+
+.btn-telegram {
+  @include btn-social($bc-telegram);
+}

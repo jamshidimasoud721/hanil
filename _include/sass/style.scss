@@ -1,0 +1,64 @@
+@charset "UTF-8";
+
+//Utilities
+@import "utilities/directional";
+@import "utilities/functions";
+@import "utilities/variables";
+@import "utilities/mixins";
+
+//Vendor
+@import "vendors/bootstrap";
+@import "vendors/bootstrap_rtl";
+@import "vendors/animate";
+@import "vendors/bootstrap_social";
+
+@import "vendors/fonts/fontawesome/fontawesome";
+@import "vendors/fonts/fontawesome/solid";
+@import "vendors/fonts/fontawesome/brands";
+@import "vendors/fonts/fontawesome/light";
+@import "vendors/fonts/fontawesome/regular";
+@import "vendors/fonts/fontawesome/flaticon-set";
+@import "vendors/fonts/iransans/font";
+@import "vendors/fonts/iranyekan/font";
+
+@import "../../node_modules/swiper/swiper";
+@import "../../node_modules/swiper/components/navigation/navigation";
+@import "../../node_modules/slick-carousel/slick/slick.scss";
+@import "../../node_modules/magnific-popup/src/css/main.scss";
+@import "../../node_modules/owl.carousel/dist/assets/owl.carousel.css";
+@import "../../node_modules/owl.carousel/dist/assets/owl.theme.default.css";
+@import "../../node_modules/aos/src/sass/aos";
+
+@import "layouts/header";
+@import "layouts/footer";
+@import "layouts/main";
+
+
+@import "pages/preview";
+@import "pages/home";
+@import "pages/service";
+@import "pages/banner";
+@import "pages/product";
+@import "pages/about";
+@import "pages/blog";
+@import "pages/account";
+@import "pages/contact";
+@import "pages/404";
+
+@import "components/scroll_to_top";
+@import "components/preloading";
+@import "components/search_box";
+@import "components/music";
+@import "components/breadcrumb";
+@import "components/sidebar";
+@import "components/captcha";
+@import "components/owl-carousel";
+
+
+
+
+
+
+
+
+

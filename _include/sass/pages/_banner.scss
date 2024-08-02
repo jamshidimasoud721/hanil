@@ -1,0 +1,32 @@
+.banner_area {
+  padding: 100px 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center left;
+
+  &_desc {
+    color: $white;
+    font-size: 15px;
+    text-align: justify;
+    line-height: 30px;
+  }
+
+  &_btn a {
+    font-size: 13px;
+    color: #fff;
+    font-weight: 500;
+    display: inline-block;
+    padding: 10px 30px;
+    background: #ed9b18;
+    border-radius: 5px;
+    -webkit-transition: all .5s ease ;
+    -moz-transition: all .5s ease ;
+    -o-transition: all .5s ease ;
+    transition: all .5s ease ;
+    margin-top: 50px;
+    &:hover{
+      color:#000;
+    }
+  }
+}
+

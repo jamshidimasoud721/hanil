@@ -1,0 +1,11 @@
+#captchadiv {
+  width: 130px;
+  background-color: $primary ;
+  display: flex;
+  justify-content: center;
+}
+
+canvas {
+  pointer-events: none;
+
+}

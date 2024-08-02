@@ -1,0 +1,76 @@
+/*-------------------------- intro  -------------------------------*/
+.home_intro {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-position: center bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
+  animation: changing-color 20s linear infinite;
+
+  &_inner {
+    padding-bottom: 200px;
+  }
+
+  &_biggest_title {
+    color: $white;
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    @include media-breakpoint-down(sm){
+      font-size: 25px;
+    }
+  }
+
+  &_little_title {
+    color: $white;
+    font-size: 20px;
+    text-align: center;
+    @include media-breakpoint-down(sm){
+      font-size: 15px;
+    }
+  }
+}
+
+
+@keyframes changing-color {
+  0% {
+    filter: hue-rotate(0deg);
+  }
+  10% {
+    filter: hue-rotate(36deg);
+  }
+  20% {
+    filter: hue-rotate(72deg);
+  }
+  30% {
+    filter: hue-rotate(108deg);
+  }
+  40% {
+    filter: hue-rotate(144deg);
+  }
+  50% {
+    filter: hue-rotate(180deg);
+  }
+  60% {
+    filter: hue-rotate(216deg);
+  }
+  70% {
+    filter: hue-rotate(252deg);
+  }
+  80% {
+    filter: hue-rotate(288deg);
+  }
+  90% {
+    filter: hue-rotate(324deg);
+  }
+  100% {
+    filter: hue-rotate(360deg);
+  }
+}
+
+
+

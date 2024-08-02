@@ -1,0 +1,121 @@
+.contact_area {
+  padding: 50px 0;
+  @include media-breakpoint-down(sm) {
+    padding: 30px 0;
+  }
+
+  .contact_wrapper {
+    border: 1px solid $secondary;
+    padding: 20px;
+    @include media-breakpoint-down(sm) {
+      margin-bottom: 15px;
+    }
+
+    &_list {
+      padding-right: 0;
+      list-style: none;
+
+      li {
+        display: flex;
+        margin-bottom: 15px;
+        align-items: center;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+
+        i {
+          color: $white;
+          margin-left: 10px;
+
+          &:before {
+            border-radius: 100%;
+            padding: 15px;
+            background: #1a1a1a;
+          }
+        }
+      }
+
+      &_details span {
+        display: block;
+
+        &:first-child {
+          color: $white;
+          font-size: 17px;
+        }
+
+        &:last-child {
+          color: $secondary;
+          font-size: 13px;
+        }
+      }
+    }
+  }
+
+  .contact_form {
+    .form-group {
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
+      flex-wrap: wrap;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+
+      label {
+        color: $secondary;
+        font-size: 14px;
+        padding-right: 0;
+        position: relative;
+
+        &:before {
+          content: '*';
+          color: red;
+          position: absolute;
+          top: -5px;
+          right: -12px;
+          font-size: 18px;
+          font-weight: 900;
+        }
+      }
+
+      input, textarea {
+        background-color: #1a1a1a;
+        border-radius: 0;
+        border: 1px solid $secondary;
+        width: 100%;
+        color: $secondary;
+        padding: 10px;
+
+        &:focus {
+          outline: 0;
+          border-radius: 0;
+        }
+      }
+    }
+
+    &_btn {
+      text-align: left;
+
+      a {
+        font-size: 13px;
+        color: #fff;
+        font-weight: 500;
+        display: inline-block;
+        padding: 10px 30px;
+        background: #ed9b18;
+        border-radius: 5px;
+        -webkit-transition: all .5s ease;
+        -moz-transition: all .5s ease;
+        -o-transition: all .5s ease;
+        transition: all .5s ease;
+
+        &:hover {
+          color: #000;
+        }
+      }
+    }
+  }
+
+}

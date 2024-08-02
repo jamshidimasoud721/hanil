@@ -1,0 +1,111 @@
+// =============================================================================
+// Url
+// =============================================================================
+
+$font-path: "../fonts";
+$img-path: "../img";
+
+// =============================================================================
+// Colors
+// =============================================================================
+
+$primary: #ED9B18;
+$secondary: #9A9A9A;
+$gold: #fce64a;
+$body-bg: #ffffff;
+$body-color: #212529;
+$warning: #febc34;
+
+$white: #ffffff;
+$grey-dark: #BDBABA;
+
+$black: #333;
+
+$black-dark: #111;
+$black-light: lighten($black, 25%);
+$black-extra-light: rgba($black, 0.1);
+
+$pink: #F4DCDC;
+$orange: #F8E2C7;
+$yellow: #FAF2CB;
+$green: #20706e;
+$lime: #E2F6CD;
+$mint: #CFF4EC;
+$blue: #D4E7F0;
+$purple: #E3DAEB;
+$lilac: #EEE5F6;
+$steel: #D9D9DA;
+$grey: #EAEAE8;
+$tan: #F0E8DD;
+
+$pink-dark: #ECB1A9;
+$blue-dark: #77CED5;
+$green-dark: #C6E1AC;
+$yellow-dark: #F7EEC1;
+
+$theme-colors: (
+        "gray": #6c757d,
+        "gold": $gold,
+        "warning":$warning
+);
+
+// =============================================================================
+// Typography
+// =============================================================================
+
+$font-family-base: 'IRANSans', 'iranyekan', serif;
+$font-family-secondary: 'iranyekan', 'IRANSans', serif;
+
+@include if-ltr {
+  @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600');
+  @import url('https://fonts.googleapis.com/css?family=Raleway:300,400,600');
+  @import url('https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i|Playfair+Display:400,400i,700,700i,900,900i|Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Roboto+Condensed:300,300i,400,400i,700,700i|Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap');
+  $font-family-base: 'Raleway', sans-serif !global;
+  $font-family-secondary: 'Open Sans', sans-serif !global;
+}
+
+// =============================================================================
+// Screen Sizes
+// =============================================================================
+
+// Extra small devices (portrait phones, less than 576px)
+//@include media-breakpoint-down(xs) { ... }
+
+// Small devices (landscape phones, less than 768px)
+//@include media-breakpoint-down(sm) { ... }
+
+// Medium devices (tablets, less than 992px)
+//@include media-breakpoint-down(md) { ... }
+
+// Large devices (desktops, less than 1200px)
+//@include media-breakpoint-down(lg) { ... }
+
+
+// =============================================================================
+// BootStrap
+// =============================================================================
+
+$enable-shadows: true;
+$link-hover-decoration: none;
+$paragraph-margin-bottom: 1rem;
+$grid-columns: 12;
+$grid-gutter-width: 30px;
+
+
+// =============================================================================
+// Index
+// =============================================================================
+$elements: grid, posts, main, filter-toggle-on, to-top, slider-left, slider-posts, drawer, slider-right, filter-toggle-off, header, footer, view-loader, view-grid;
+$single_elements: single-grid, single-content, single-header;
+
+// =============================================================================
+// Transitions
+// =============================================================================
+$base-timing: 600ms;
+$base-easing: cubic-bezier(0.165, 0.84, 0.44, 1);
+
+
+$base-spacing-unit: rem-calc(20);
+
+$color-anchor: $blue-dark;
+$color-anchor-hover: $black-dark;
